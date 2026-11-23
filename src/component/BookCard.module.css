@@ -1,33 +1,100 @@
-.card{
-    display: flex;
-    padding: 10px;
-    margin-bottom:10px ;
-    background-color: #303030;
-    border-radius: 10px;
+.card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: background-color 0.25s ease;
 }
+
 .card img {
-    width: 60px;
-    border-radius: 5px;
-    margin-right: 30px;
+  width: 65px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
 }
-.info{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
 }
-.info span{
-    margin-right: 20px;
-    font-size: 0.85rem;
-    color: #959595;
+
+.info h3 {
+  color: var(--text);
+  font-size: 1rem;
 }
-.card button{
-    height: fit-content;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: 0.1s all ease-in-out;
+
+.info p {
+  color: var(--text-secondary);
 }
-.card button:hover{
-    transform: scale(1.2);
+
+.info span {
+  margin-right: 15px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.actions a {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.actions button {
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  color: white;
+  background: var(--accent);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: var(--accent-hover);
+}
+
+.favoriteButton {
+  flex-shrink: 0;
+  height: fit-content;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.favoriteButton:hover {
+  transform: scale(1.15);
+}
+
+@media (max-width: 480px) {
+  .card {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .card img {
+    width: 52px;
+    height: 76px;
+  }
+
+  .info h3 {
+    font-size: 0.9rem;
+  }
+
+  .info span {
+    margin-right: 8px;
+  }
 }
