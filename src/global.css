@@ -1,19 +1,22 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-}
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 
-body {
-  margin: auto;
-  max-width: 1000px;
-  min-height: 100vh;
-  padding: 10px;
-  background-color: #1e1e1e;
-  color: #e0e0e0;
-}
+  --accent: #6552f4;
+  --accent-hover: #5140d6;
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  color-scheme: dark;
+
+  --bg: #1e1e1e;
+  --surface: #303030;
+  --surface-secondary: #292929;
+  --surface-hover: #383838;
+
+  --text: #e0e0e0;
+  --text-secondary: #959595; /* قبلاً #242323 بود */
+
+  --border: #414141;
+  --danger: #ef5350;
 }
