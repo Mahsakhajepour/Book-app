@@ -1,8 +1,28 @@
-# React + Vite
+# Book Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive book library built with React and Vite. Browse classic books, search by title or author, save favorites, and switch between light, dark, and system themes.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Features
+
+- Search books by title or author
+- Add and remove favorites, shown in a side panel
+- Download confirmation modal
+- Light, dark, and system theme (saved in localStorage)
+- Responsive layout for desktop and mobile
+
+## Tech Stack
+
+- React (hooks and Context API)
+- Vite
+- CSS Modules with CSS variables
+- React Icons
+
+
+
+npm install
+npm run dev
+
+
+

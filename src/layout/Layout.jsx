@@ -1,16 +1,31 @@
+import styles from "./Layout.module.css";
+import ThemeToggle from "../component/ThemeToggle";
 
-import styles from "./Layout.module.css"
-function Layout({children}) {
+function Layout({ children }) {
   return (
     <>
       <header className={styles.header}>
         <h1>Book App</h1>
-        <p><a href="https://botostart.ir">Botostart </a>| React.js Full Course</p>
+
+        <div className={styles.headerActions}>
+          <p>
+            <a href="https://botostart.ir" target="_blank" rel="noreferrer">
+              Botostart
+            </a>
+            {" | React.js Full Course"}
+          </p>
+
+          <ThemeToggle />
+        </div>
       </header>
-        {children}
-        <footer className={styles.footer}><p>Developed by Milad with 🤍 </p></footer>
+
+      <main>{children}</main>
+
+      <footer className={styles.footer}>
+        <p>Developed by Mahi with 🤍</p>
+      </footer>
     </>
-  )
+  );
 }
 
 export default Layout;
