@@ -1,4 +1,3 @@
-```javascript
 import img1 from "../assets/1.png"
 import img2 from "../assets/2.png"
 import img3 from "../assets/3.png";
@@ -94,6 +93,7 @@ const books = [
     year: 1350,
   },
   {
+    
     id: "008",
     author: "Jane Austen",
     country: "United Kingdom",
@@ -130,5 +130,3 @@ const books = [
 ];
 
 export { books };
-اینم بو جا افتاد
-```
